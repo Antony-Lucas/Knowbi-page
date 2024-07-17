@@ -1,0 +1,247 @@
+* {
+  line-height: 1.4rem;
+}
+
+sup {
+  color: #ff0000;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  margin: 10rem 0 5rem 0;
+  padding: 0 10rem;
+}
+
+.contact,
+.form {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact h2 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.contacts_social {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.social_content {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.social_content svg {
+  height: 1.5rem;
+  width: max-content;
+  margin-right: 2rem;
+}
+
+.contact_social-network {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+.social-networks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  padding: 1rem 0;
+}
+
+.social-networks svg {
+  cursor: pointer;
+}
+
+.social-networks svg rect,
+.social-networks svg path {
+  transition: all 0.8s ease;
+}
+
+.social-networks svg:hover rect,
+.social-networks svg:hover path {
+  transition: all 0.8s ease;
+}
+
+.social-networks svg:hover rect {
+  fill: #f2f2f2;
+  stroke: #0f26a2;
+}
+
+.social-networks svg:hover path {
+  fill: #0f26a2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.wrapper_form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.wrapper_form label {
+  pointer-events: none;
+  color: #8d8d8d;
+}
+
+.wrapper_form input,
+.wrapper_form select,
+.wrapper_form textarea {
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.8rem;
+  border: solid 1px #c4ccff;
+  letter-spacing: 2px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.wrapper_form textarea {
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.wrapper_form input:focus,
+.wrapper_form select:focus,
+.wrapper_form textarea:focus {
+  outline: none;
+  border: solid 1px #8191ff;
+}
+
+.wrapper_radios,
+.radio-buttons label {
+  margin: 0.5rem 0;
+}
+
+.wrapper_radios label {
+  color: #8d8d8d;
+}
+
+.wrapper_radios .radio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.wrapper_radios input[type="radio"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.wrapper_radios input[type="radio"]:checked + span {
+  box-shadow: 0 0 0 0.0625em #0043ed;
+  background-color: #f2f2f2;
+  z-index: 1;
+  color: #0043ed;
+  font-weight: bold;
+}
+
+.radio-buttons label span {
+  display: block;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.375em 0.75em;
+  position: relative;
+  margin-left: 0.0625em;
+  box-shadow: 0 0 0 0.0625em #b5bfd9;
+  letter-spacing: 0.05em;
+  color: #3e4963;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.radio-buttons label:first-child span {
+  border-radius: 0.375em 0 0 0.375em;
+}
+
+.radio-buttons label:last-child span {
+  border-radius: 0 0.375em 0.375em 0;
+}
+
+.privacity {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.privacity p {
+  margin-bottom: 1rem;
+}
+
+form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  width: 8rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+
+  background-color: #0f26a2;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.hover-underline-animation {
+  background: none;
+  position: relative;
+  color: #f2f2f2;
+  width: 80%;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.1rem;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+form button:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

@@ -1,0 +1,345 @@
+<div class="container">
+  <mat-toolbar>
+    <img src="assets/Assinatura_principal_horizontal.svg" alt="" />
+
+    <div class="wrapper_options">
+      <div>
+        <div class="dropdown">
+          <button class="dropbtn center" [matMenuTriggerFor]="menu">
+            Soluções
+            <span class="material-symbols-outlined"> keyboard_arrow_down </span>
+          </button>
+
+          <mat-menu #menu="matMenu" class="dropdown-content">
+            <button mat-menu-item routerLink="/koios" class="custom-menu-item">
+              Koios
+            </button>
+            <button
+              mat-menu-item
+              routerLink="/support"
+              class="custom-menu-item"
+            >
+              Suporte
+            </button>
+            <button
+              mat-menu-item
+              routerLink="/report_development"
+              class="custom-menu-item"
+            >
+              Relatórios
+            </button>
+          </mat-menu>
+        </div>
+      </div>
+      <div>
+        <button class="client-area" (click)="openClientArea()">
+          Área do cliente
+        </button>
+        <button class="demonstration" routerLink="/contact">
+          Solicite uma demonstração
+        </button>
+      </div>
+    </div>
+  </mat-toolbar>
+
+  <section class="hero">
+    <div class="description">
+      <h1>Inovação em Tecnologia para Decisões Estratégicas</h1>
+      <p>
+        Oferecemos produtos e serviços com suporte especializado e excelência.
+        Nossas soluções tratam, visualizam dados, reduzem custos e aumentam a
+        eficiência operacional facilitando a tomada de decisões estratégicas.
+      </p>
+      <button class="demonstration-especialist" routerLink="/contact">
+        Falar com nossos especialistas
+      </button>
+    </div>
+
+    <img class="bg_initial" src="../../../assets/bg_dashboard.png" alt="" />
+  </section>
+
+  <section class="solution">
+    <h2>Conheça nossas soluções</h2>
+
+    <div class="content_soluctions">
+      <a routerLink="/koios" class="card koios">
+        <img src="../../../assets/koios_plus_mirai.svg" alt="Koios" />
+        <h3>Koios + MirAI</h3>
+        <p>
+          O Koios<sup>bi</sup> é uma poderosa ferramenta de BI focada na criação
+          de dashboards inteligentes auxiliando na tomada de decisão e
+          visualização de dados juntamente com MirAI, sua Inteligência
+          Artificial.
+        </p>
+      </a>
+
+      <a routerLink="/report_development" class="card rel">
+        <img
+          src="../../../assets/report_development.svg"
+          alt="Desenvolvimento de relatórios"
+        />
+
+        <h3>Desenvolvimento de Relatórios</h3>
+        <p>
+          KnowBI cria relatórios estratégicos e monitora dados usando BI
+          avançado para insights claros em insituições.
+        </p>
+      </a>
+
+      <a routerLink="/support" class="card consulting">
+        <img src="../../../assets/support.svg" alt="suporte" />
+
+        <h3>Suporte Especializado</h3>
+
+        <p>
+          Oferecemos soluções inovadoras para otimizar processos em saúde,
+          incluindo análise, treinamento e suporte técnico.
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Quem somos</h2>
+    <div class="we_are">
+      <div>
+        <div class="we_are-card">
+          <h3>Um time show de bola</h3>
+
+          <p>
+            Somos uma empresa de tecnologia especializada em soluções de
+            negócios inteligentes para uma variedade de setores, focados em
+            melhorar eficiência, otimizar processos e impulsionar o crescimento
+            sustentável através de nossa expertise técnica e comprometimento com
+            a satisfação do cliente.
+          </p>
+        </div>
+
+        <img class="about-logo" src="../../../assets/about.svg" alt="" />
+      </div>
+      <div class="meeting_room">
+        <img
+          src="../../../assets/knowbi/meeting.png"
+          alt="Sala de reuniões KnowBI"
+          height="736"
+          width="1104.324"
+          priority
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="fundamentals">
+    <h2>Nossos fundamentos</h2>
+
+    <div class="fundamentals_wrapper center">
+      <div class="timeline">
+        <div class="container_timeline left">
+          <span class="icon material-symbols-outlined"> diversity_2 </span>
+          <div class="content_timeline">
+            <h2>Business Intelligence</h2>
+            <p>
+              Fornecemos soluções de BI para coletar, analisar e visualizar
+              dados de negócios, utilizando tecnologias avançadas para ajudar
+              empresas a obter insights e tomar decisões informadas.
+            </p>
+          </div>
+        </div>
+        <div class="container_timeline right">
+          <span class="icon material-symbols-outlined"> psychology </span>
+          <div class="content_timeline">
+            <h2>Inteligência Artificial</h2>
+            <p>
+              A IA automatiza processos, identifica padrões e prevê tendências
+              em nossas soluções, usando aprendizado de máquina e processamento
+              de linguagem natural para otimizar operações e melhorar decisões.
+            </p>
+          </div>
+        </div>
+        <div class="container_timeline left">
+          <span class="icon material-symbols-outlined"> memory_alt </span>
+          <div class="content_timeline">
+            <h2>Transformação Digital</h2>
+            <p>
+              Acreditamos que a tecnologia é essencial para a transformação
+              digital, ajudando clientes a adotar inovações, migrar para a
+              nuvem, integrar sistemas e maximizar dados para melhorar
+              eficiência e competitividade.
+            </p>
+          </div>
+        </div>
+        <div class="container_timeline right">
+          <span class="icon material-symbols-outlined"> encrypted </span>
+          <div class="content_timeline">
+            <h2>Segurança da Informação</h2>
+            <p>
+              Priorizamos a segurança da informação, projetando soluções que
+              protegem os dados dos clientes com medidas rigorosas de segurança
+              e criptografia para garantir confidencialidade, integridade e
+              disponibilidade.
+            </p>
+          </div>
+        </div>
+        <div class="container_timeline left">
+          <span class="icon material-symbols-outlined"> support_agent </span>
+          <div class="content_timeline">
+            <h2>Suporte e Capacitação</h2>
+            <p>
+              Além de fornecer soluções, oferecemos suporte técnico e
+              treinamento para garantir que nossos clientes possam utilizar
+              plenamente nossas ferramentas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillars">
+    <div class="pillars_content center">
+      <div class="pillars_cards">
+        <svg
+          width="1081"
+          height="1081"
+          viewBox="0 0 1081 1081"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1081" height="1081" rx="270.25" fill="#0F26A2" />
+          <path
+            d="M541 790C679.071 790 791 678.071 791 540C791 401.929 679.071 290 541 290C402.929 290 291 401.929 291 540C291 678.071 402.929 790 541 790Z"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M791 540H691"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M391 540H291"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M541 390V290"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M541 790V690"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <h3>Missão</h3>
+        <span>
+          Transformar vidas ao conectar pessoas aos desafios de negócios com
+          soluções inovadoras
+        </span>
+      </div>
+
+      <div class="pillars_cards">
+        <svg
+          width="1081"
+          height="1081"
+          viewBox="0 0 1081 1081"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1081" height="1081" rx="270.25" fill="#0F26A2" />
+          <path
+            d="M266 539.999C266 539.999 366 340 541 340C716 340 816 539.999 816 539.999C816 539.999 716 739.999 541 739.999C366 739.999 266 539.999 266 539.999Z"
+            stroke="white"
+            stroke-width="38.8333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M541 615C582.421 615 616 581.421 616 540C616 498.578 582.421 465 541 465C499.578 465 466 498.578 466 540C466 581.421 499.578 615 541 615Z"
+            stroke="white"
+            stroke-width="38.8333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <h3>Visão</h3>
+        <span>
+          Prover soluções de inteligência de negócios para setores complexos. ㅤ
+        </span>
+      </div>
+
+      <div class="pillars_cards">
+        <svg
+          width="1081"
+          height="1081"
+          viewBox="0 0 1081 1081"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1081" height="1081" rx="270.25" fill="#0F26A2" />
+          <path
+            d="M541 790C541 790 741 690 741 540V365L541 290L341 365V540C341 690 541 790 541 790Z"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <h3>Valores</h3>
+        <span>
+          Ética, Empatia, Respeito às Pessoas, Qualidade, Resultado, Paixão por
+          Transformar Vidas
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="description_values">
+    <div class="description_values-content">
+      <div *ngFor="let item of company_values">
+        <app-cards-value
+          [title]="item.title"
+          [description]="item.description"
+        ></app-cards-value>
+      </div>
+    </div>
+  </section>
+
+  <section class="origin">
+    <div class="origin_content">
+      <div class="origin_history">
+        <h2>Origem</h2>
+        <p>
+          A empresa de tecnologia KnowBI Business Intelligence foi fundada em
+          homenagem ao personagem fictício "Kenobi" da saga Star Wars.
+        </p>
+        <p>
+          Inspirados pela sabedoria e coragem do personagem "Kenobi", que sempre
+          encontrava soluções criativas e inteligentes para os desafios que
+          enfrentava, os fundadores perceberam que poderiam aplicar essas mesmas
+          habilidades no mundo dos negócios. Assim, surgiu a KnowBI, uma empresa
+          especializada em fornecer soluções tecnológicas avançadas para ajudar
+          outras empresas a tomarem decisões estratégicas com base em dados
+          precisos e análises inteligentes. A KnowBI Business Intelligence se
+          destaca no mercado por sua abordagem inovadora e personalizada para
+          atender às necessidades de cada cliente.
+        </p>
+        <p>A KnowBI se esforça para ser um verdadeiro aliado.</p>
+      </div>
+    </div>
+  </section>
+
+  <app-footer-component></app-footer-component>
+</div>

@@ -1,0 +1,84 @@
+* {
+  background: none;
+}
+
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f26a2;
+  padding: 2.4rem 0;
+
+  position: fixed;
+  z-index: 9999;
+}
+
+.spacer {
+  flex: 2 1 auto;
+}
+
+.centralize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0.2rem 5rem 0 5rem;
+}
+
+.centralize svg {
+  height: max-content;
+  width: 10rem;
+}
+
+.wrapper_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15rem;
+}
+
+.dropbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #f2f2f2;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  font-size: 1rem;
+  background-color: #f2f2f2;
+  min-width: 10rem;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+
+  z-index: 999999;
+}
+
+.dropdown-content a {
+  display: block;
+  color: #1d1d1b;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  font-weight: 500;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

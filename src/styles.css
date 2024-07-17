@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Cabin", sans-serif;
+}
+
+html,
+body {
+  background-color: #fff;
+  height: 100%;
+  cursor: default;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+::-moz-selection {
+  color: #011140;
+  background: #b9d6ff;
+}
+
+::selection {
+  color: #011140;
+  background: #b9d6ff;
+}
+
+*::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #dfe9eb;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #bcbcbc;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #bcbcbc;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #bcbcbc;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
+}
