@@ -11,6 +11,8 @@ sup {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
 }
 
 .container {
@@ -19,22 +21,34 @@ sup {
   justify-content: center;
   width: 100%;
   margin: 10rem 0 5rem 0;
-  padding: 0 10rem;
 }
 
 .contact,
 .form {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: start;
   flex-direction: column;
   width: 50%;
 }
 
+.form h2 {
+  font-size: 15px;
+  align-self: baseline;
+}
+
+form {
+  margin-top: 30px;
+}
+
 .contact h2 {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 15px;
   margin-bottom: 2.5rem;
+}
+
+.contact span {
+  font-size: 13px;
 }
 
 .contacts_social {
@@ -111,6 +125,7 @@ form {
 .wrapper_form label {
   pointer-events: none;
   color: #8d8d8d;
+  font-size: 13px;
 }
 
 .wrapper_form input,
@@ -118,16 +133,11 @@ form {
 .wrapper_form textarea {
   padding: 0.6rem 0.8rem;
   font-size: 1rem;
-  border-radius: 0.8rem;
+  border-radius: 5px;
   border: solid 1px #c4ccff;
   letter-spacing: 2px;
-  width: 100%;
-  background-color: #f2f2f2;
-}
-
-.wrapper_form textarea {
-  max-width: 100%;
-  min-width: 100%;
+  width: 80%;
+  background-color: #fcfcfc;
 }
 
 .wrapper_form input:focus,
@@ -140,10 +150,12 @@ form {
 .wrapper_radios,
 .radio-buttons label {
   margin: 0.5rem 0;
+  font-size: 13px;
 }
 
 .wrapper_radios label {
   color: #8d8d8d;
+  font-size: 13px;
 }
 
 .wrapper_radios .radio-buttons {
@@ -151,6 +163,7 @@ form {
   flex-wrap: wrap;
   margin-top: 0.5rem;
   justify-content: center;
+  width: 85%;
 }
 
 .wrapper_radios input[type="radio"] {
@@ -199,10 +212,12 @@ form {
   justify-content: start;
   flex-direction: column;
   text-align: justify;
+  width: 80%;
 }
 
 .privacity p {
   margin-bottom: 1rem;
+  font-size: 13px;
 }
 
 form button {
@@ -210,15 +225,13 @@ form button {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
-  width: 8rem;
+  width: 7rem;
   padding: 0.8rem 1rem;
-  border-radius: 0.5rem;
-
+  border-radius: 5px;
   background-color: #0f26a2;
-
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: bold;
+  border: none;
 }
 
 .hover-underline-animation {
@@ -244,4 +257,54 @@ form button {
 form button:hover .hover-underline-animation:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .form {
+    width: 80%;
+  }
+
+  form {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper_form {
+    width: 100%;
+  }
+
+  .wrapper_form input {
+    width: 95%;
+  }
+
+  .wrapper_form textarea {
+    width: 95%;
+  }
+
+  .wrapper_radios .radio-buttons {
+    width: 100%;
+  }
+
+  .contact {
+    margin-top: 6rem;
+  }
+
+  .contact h2 {
+    font-size: 15px;
+  }
+
+  .contact span {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .wrapper_radios label {
+    font-size: 11px;
+  }
 }

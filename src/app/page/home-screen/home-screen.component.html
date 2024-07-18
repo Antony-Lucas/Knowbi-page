@@ -34,12 +34,12 @@
     <div class="wrapper_options">
       <div>
         <div class="dropdown">
-          <button class="dropbtn center" [matMenuTriggerFor]="menu">
+          <button class="dropbtn center" [matMenuTriggerFor]="menuExpanded">
             Soluções
             <span class="material-symbols-outlined"> keyboard_arrow_down </span>
           </button>
 
-          <mat-menu #menu="matMenu" class="dropdown-content">
+          <mat-menu #menuExpanded="matMenu" class="dropdown-content">
             <button mat-menu-item routerLink="/koios" class="custom-menu-item">
               Koios
             </button>
