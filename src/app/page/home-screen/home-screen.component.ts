@@ -4,20 +4,15 @@ import {
   isPlatformBrowser,
   NgOptimizedImage,
 } from '@angular/common';
-import {
-  Component,
-  Inject,
-  OnDestroy,
-  OnInit,
-  PLATFORM_ID,
-  Renderer2,
-} from '@angular/core';
+import { Component, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { FooterComponent } from '../../shared/footer-component/footer-component';
 import { CardsValueComponent } from './cards-values/cards.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-home-screen',
@@ -31,11 +26,16 @@ import { MatButtonModule } from '@angular/material/button';
     CardsValueComponent,
     MatButtonModule,
     MatMenuModule,
+    FontAwesomeModule,
   ],
   templateUrl: './home-screen.component.html',
   styleUrl: './home-screen.component.css',
 })
 export class HomeScreenComponent implements OnInit {
+  icons = {
+    menu: faBars,
+  };
+
   fundamentals_description = [
     {
       title: 'Business Intelligence',

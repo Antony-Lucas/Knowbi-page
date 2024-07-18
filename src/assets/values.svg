@@ -1,0 +1,16 @@
+<svg
+          width="1081"
+          height="1081"
+          viewBox="0 0 1081 1081"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1081" height="1081" rx="270.25" fill="#0F26A2" />
+          <path
+            d="M541 790C541 790 741 690 741 540V365L541 290L341 365V540C341 690 541 790 541 790Z"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>

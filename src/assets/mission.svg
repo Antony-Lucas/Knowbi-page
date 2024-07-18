@@ -1,0 +1,44 @@
+<svg
+          width="1081"
+          height="1081"
+          viewBox="0 0 1081 1081"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1081" height="1081" rx="270.25" fill="#0F26A2" />
+          <path
+            d="M541 790C679.071 790 791 678.071 791 540C791 401.929 679.071 290 541 290C402.929 290 291 401.929 291 540C291 678.071 402.929 790 541 790Z"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M791 540H691"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M391 540H291"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M541 390V290"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M541 790V690"
+            stroke="white"
+            stroke-width="38"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>

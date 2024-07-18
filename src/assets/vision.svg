@@ -1,0 +1,23 @@
+<svg
+          width="1081"
+          height="1081"
+          viewBox="0 0 1081 1081"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1081" height="1081" rx="270.25" fill="#0F26A2" />
+          <path
+            d="M266 539.999C266 539.999 366 340 541 340C716 340 816 539.999 816 539.999C816 539.999 716 739.999 541 739.999C366 739.999 266 539.999 266 539.999Z"
+            stroke="white"
+            stroke-width="38.8333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M541 615C582.421 615 616 581.421 616 540C616 498.578 582.421 465 541 465C499.578 465 466 498.578 466 540C466 581.421 499.578 615 541 615Z"
+            stroke="white"
+            stroke-width="38.8333"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
