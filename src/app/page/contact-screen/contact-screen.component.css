@@ -132,10 +132,9 @@ form {
 .wrapper_form select,
 .wrapper_form textarea {
   padding: 0.6rem 0.8rem;
-  font-size: 1rem;
+  font-size: 13px;
   border-radius: 5px;
   border: solid 1px #c4ccff;
-  letter-spacing: 2px;
   width: 80%;
   background-color: #fcfcfc;
 }
